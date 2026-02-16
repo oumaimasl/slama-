@@ -1,5 +1,4 @@
 # slama-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -47,10 +46,103 @@
     a {
       color: #0066cc;
       text-decoration: none;
+      
     }
-  </style>
-</head>
-<body>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.7;
+  }
+
+  header {
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .stat-box {
+    background: #fafafa;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #eee;
+  }
+
+  .stat-box h3 {
+    font-size: 28px;
+    color: #111;
+    margin: 0;
+  }
+
+  .stat-box p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .image-box {
+    margin-top: 20px;
+  }
+
+  .image-box img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #eee;
+  }
+
+  footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+</style>
+
 
 <header>
   <h1>Your Name</h1>
@@ -68,15 +160,30 @@
 
 <section>
   <h2>Key Achievements</h2>
-  <div class="card">
-    <ul>
-      <li><strong>Transaction Growth:</strong> ~70–90% year-over-year increase following marketing initiatives</li>
-      <li><strong>Social Media Reach:</strong> 298K+ total organic video views</li>
-      <li><strong>Audience Growth:</strong> 230K+ users reached organically</li>
-      <li><strong>Engagement:</strong> Profile visits increased by 280%+</li>
-    </ul>
+
+  <div class="stats">
+    <div class="stat-box">
+      <h3>+70–90%</h3>
+      <p>Year-over-year transaction growth</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>298K+</h3>
+      <p>Total organic video views</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>230K+</h3>
+      <p>Users reached organically</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>+280%</h3>
+      <p>Profile visits growth</p>
+    </div>
   </div>
 </section>
+
 
 <section>
   <h2>Case Study: Driving Business Growth</h2>
@@ -92,6 +199,10 @@
 
     <p><strong>Results:</strong></p>
     <ul>
+    <div class="image-box">
+  <img src="transactions.png" alt="Transaction growth overview">
+</div>
+
       <li>~70–90% year-over-year transaction growth</li>
       <li>Consistent month-over-month performance improvement</li>
       <li>Record-high transaction levels within 12 months</li>
@@ -114,6 +225,10 @@
 
     <p><strong>Results:</strong></p>
     <ul>
+    <div class="image-box">
+  <img src="tiktok-performance.png" alt="TikTok analytics overview">
+</div>
+
       <li>298K+ total video views</li>
       <li>230K+ reached audience</li>
       <li>Multiple videos with 10K–28K organic views</li>
